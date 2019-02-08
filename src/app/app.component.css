@@ -1,0 +1,7 @@
+.gradient {
+	position: fixed;
+	bottom: -15%;
+	right: 0;
+	left: 40%;
+	z-index: -1;
+}

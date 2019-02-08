@@ -1,0 +1,48 @@
+<div class="container landing-container">
+	<div class="animated fadeIn slow left-container" id="left-container">
+		<h1>hi. <br> i'm Arshad Mohamed. <br> i am a 
+			<div style="display:inline-block;">
+				<span id="role-div" class="animated infinite flipOutX role-color" *ngFor="let role of [ role ]" [@simpleFadeAnimation]>{{ role }}</span>
+			</div>
+		</h1>
+	</div>
+	<div class="animated bounceInDown right-container" id="right-container">
+		<img class="animated infinite bounceOutUp" id="svg-icon" *ngFor="let icon of [ icon ]" [@simpleFadeAnimation] src="../assets/svg/{{ icon }}.svg">
+	</div>
+	
+</div>
+
+<div id="scroll-down" >
+	<span class="animated fadeIn delay-1s"><img id="down-arrow" class="animated infinite pulse delay-1s increase-opacity" src="../assets/svg/down-arrow.svg"></span>
+</div>
+
+<div class="container information-container" id="info">
+	<span>
+		<div class="info-text">
+			<p>
+				Modern, creative, and innovative; all of my work is 	made with these in mind. I am passionate about 	providing creative services that are tailored and 	crafted to my clients' needs!
+			</p>
+			<a class="animated-link" routerLink="/about">
+				<svg>
+					<rect></rect>
+					<text x="50%" y="50%" text-anchor="middle" 	dominant-baseline="middle">See my work!</text>
+				</svg>
+			</a>
+		</div>
+	</span>
+</div>
+
+<div class="video-container">
+	<video playsinline autoplay muted loop id="background-video" class="decrease-opacity">
+  		<source src="../assets/videos/clouds.mp4" type="video/mp4">
+	</video>
+	<div id="video-text" class="decrease-opacity">
+		<h2>Lets create something <span style="color: #198C7E;">together!</span></h2>
+		<a class="animated-link" href="mailto:arshadmohamed22@gmail.com">
+			<svg>
+				<rect></rect>
+				<text x="50%" y="50%" fill="#FFFFFF" stroke="#FFFFFF" text-anchor="middle"	dominant-baseline="middle">Contact me</text>
+			</svg>
+		</a>
+	</div>
+</div>
