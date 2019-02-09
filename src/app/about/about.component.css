@@ -188,6 +188,15 @@ h1 span, h2 span {
 .showcase-text a:hover:after {
   width: 100px;
 }
+.showcase-text .trident-hover:hover {
+	text-decoration: underline;
+}
+.showcase-text .trident-hover:after {
+	height: 0px;
+}
+.showcase-text .trident-hover:hover:after {
+	width: 0px;
+}
 
 /*---- Video Container ----*/
 .video-container {
@@ -248,11 +257,6 @@ h1 span, h2 span {
 }
 
 /*---- Animation Stuff ----*/
-
-.animatedhover:hover {
-  	-webkit-animation: heartBeat 1s;
-    animation: heartBeat 1s;
-}
 
 #about-p {
 	animation-delay: .5s;
