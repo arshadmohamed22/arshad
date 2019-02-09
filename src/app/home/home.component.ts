@@ -64,20 +64,20 @@ export class HomeComponent implements OnInit {
       $("#down-arrow").removeClass("decrease-opacity");
       $("#down-arrow").addClass("increase-opacity");
     }
-    if ((number > 700) || (number < 1400)) {
+    if ($("#info").offset().top < 400) {
       this.elRef.nativeElement.ownerDocument.body.classList.add("changeColor")
-      $(".info-text").delay(1000).fadeIn("slow");
+      $(".info-text").delay(500).fadeIn("slow");
     }
-    if ((number < 700) || (number > 1400)) {
+    if ($("#info").offset().top > 400 || (number > 1000)) {
        this.elRef.nativeElement.ownerDocument.body.classList.remove("changeColor")
     }
-    if (number > 1800) {
+    if ($("#video").offset().top < 20) {
       $("#background-video").removeClass("decrease-opacity");
       $("#background-video").addClass("increase-opacity-half");
       $("#video-text").removeClass("decrease-opacity");
       $("#video-text").addClass("increase-opacity");
     }
-    if (number < 1700) {
+    if ($("#video").offset().top > 100) {
       $("#background-video").removeClass("increase-opacity-half");
       $("#background-video").addClass("decrease-opacity");
       $("#video-text").removeClass("increase-opacity");

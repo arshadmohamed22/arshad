@@ -39,34 +39,34 @@ export class AboutComponent implements OnInit {
       $("#down-arrow").removeClass("decrease-opacity");
       $("#down-arrow").addClass("increase-opacity");
     }
-    if ($("#1").offset().top < 600) {
+    if ($("#1").offset().top < 450) {
       $("#1").removeClass("decrease-opacity");
       $("#1").addClass("increase-opacity");
       $("#text-one").addClass("grow-right");
     }
-    if ($("#2").offset().top < 600) {
+    if ($("#2").offset().top < 450) {
       $("#2").removeClass("decrease-opacity");
       $("#2").addClass("increase-opacity");
       $("#text-two").addClass("grow-left");
     }
-    if ($("#3").offset().top < 600) {
+    if ($("#3").offset().top < 450) {
       $("#3").removeClass("decrease-opacity");
       $("#3").addClass("increase-opacity");
       $("#text-three").addClass("grow-right");
     }
-    if ($("#4").offset().top < 600) {
+    if ($("#4").offset().top < 450) {
       $("#4").removeClass("decrease-opacity");
       $("#4").addClass("increase-opacity");
       $("#text-four").addClass("grow-left");
     }
     if ($("#video-container").offset().top < 20) {
       $("#background-video").removeClass("decrease-opacity");
-      $("#background-video").addClass("increase-opacity-half");
+      $("#background-video").addClass("increase-opacity");
       $("#video-text").removeClass("decrease-opacity");
       $("#video-text").addClass("increase-opacity");
     }
-    if ($("#video-container").offset().top > 30) {
-      $("#background-video").removeClass("increase-opacity-half");
+    if ($("#video-container").offset().top > 100) {
+      $("#background-video").removeClass("increase-opacity");
       $("#background-video").addClass("decrease-opacity");
       $("#video-text").removeClass("increase-opacity");
       $("#video-text").addClass("decrease-opacity");
