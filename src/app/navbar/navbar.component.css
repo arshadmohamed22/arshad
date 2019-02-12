@@ -60,6 +60,9 @@ a:hover {
 		padding: 1em 1em 1em 1.5em;
 		grid-template-columns: 40% auto;
 	}
+	.logo {
+		font-weight: normal;
+	}
 }
 @media only screen and (max-width: 414px) {
 	.nav-container {
