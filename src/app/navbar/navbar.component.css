@@ -61,7 +61,7 @@ a:hover {
 		grid-template-columns: 40% auto;
 	}
 	.logo {
-		font-weight: normal;
+		font-weight: bold;
 	}
 }
 @media only screen and (max-width: 414px) {

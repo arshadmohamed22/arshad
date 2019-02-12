@@ -1,5 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+@import url('https://fonts.googleapis.com/css?family=Lato');
 
 body, html {
 	height: 100%;
@@ -80,6 +80,6 @@ section {
 
 @media only screen and (max-width: 560px)  {
 	h1, h2, h3, h4, h5, h6 { /*reset for mobile browsers */	
-		font-weight: 700;	
+		font-weight: bold;	
 	}
 }
